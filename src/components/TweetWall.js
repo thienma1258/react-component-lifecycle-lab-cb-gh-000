@@ -19,6 +19,9 @@ componentWillReceiveProps(nextProps){
   this.setState({tweets:listTweets});
 
 }
+shouldComponentUpdate(){
+   return (this.state.tweets.length>0);
+}
   // TODO: componentWillMount()
   // TODO: shouldComponentUpdate()
   // TODO: componentWillReceiveProps()
