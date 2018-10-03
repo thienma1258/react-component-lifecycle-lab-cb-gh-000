@@ -15,8 +15,7 @@ class TweetWall extends React.Component {
     this.setState({tweets:tweets});
   }
 componentWillReceiveProps(nextProps){
-  var listTweets=this.state.tweets;
-listTweets.push(nextProps.newTweets);
+  var listTweets=this.state.tweets.concat(nextProps.newTweets);
   this.setState({tweets:listTweets});
 
 }
