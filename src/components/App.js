@@ -27,7 +27,7 @@ componentDidMount(){
   this.startInterval();
 }
 componentWillUnmount(){
-  this.clearInterval();
+  this.cleanUpInterval();
 }
   cleanUpInterval = () => clearInterval(this.interval);
 
